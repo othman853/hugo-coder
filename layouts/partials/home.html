@@ -1,10 +1,12 @@
 <section class="container is-communist">
   <div class="about">
-    <h1>{{ .Site.Params.author }}</h1>
-    <h2>{{ .Site.Params.info }}</h2>
+    <h2 class="capitalized">{{ .Site.Params.info }}</h2>
+
     <ul>
-      {{ range sort .Site.Params.social }}
-      <li><a href="{{ .url }}">{{ .name }}</a></li>
+      {{ range .Paginator.Pages }}
+      <li>
+        <span>{{ .Date.Format "January 2, 2006" }}</span><a href="{{ .URL }}">{{ .Title }}</a>
+      </li>
       {{ end }}
     </ul>
   </div>

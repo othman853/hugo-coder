@@ -376,3 +376,6 @@ blockquote {
 .float-left {
   float: left;
 }
+.capitalized {
+  text-transform: capitalize;
+}
