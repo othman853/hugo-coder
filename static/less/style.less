@@ -147,7 +147,7 @@ blockquote {
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
   }
   ul {
@@ -161,6 +161,9 @@ blockquote {
       a {
         margin-left: 1.0rem;
         margin-right: 1.0rem;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+          font-size: 1.2rem;
+        }
       }
     }
   }
@@ -307,9 +310,6 @@ blockquote {
 
   .about {
     text-align: left;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-      text-align: center;
-    }
     h1 {
       margin-top: 2.0rem;
       margin-bottom: 0.5rem;
@@ -380,4 +380,59 @@ blockquote {
 
 .capitalized {
   text-transform: capitalize;
+}
+
+.blinking-cursor {
+  font-weight: 100;
+  color: red;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }
