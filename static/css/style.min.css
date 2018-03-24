@@ -9,7 +9,7 @@ html {
 }
 body {
   color: #323232;
-  background-color: #C92D2D;
+  background-color: #fefefe;
   font-family: 'Fira Mono', monospace;
   font-size: 1.6em;
   font-weight: 400;
@@ -106,7 +106,7 @@ pre {
 }
 code {
   background-color: #000;
-  color: #C92D2D;
+  color: #fefefe;
   padding: 0.4rem 0.8rem 0.4rem 0.8rem;
 }
 blockquote {
@@ -290,6 +290,72 @@ blockquote {
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .centered .error h2 {
+    font-size: 2.8rem;
+  }
+}
+.is-communist {
+  display: flex;
+  height: 100%;
+  align-items: left;
+  justify-content: left;
+}
+.is-communist .about {
+  text-align: left;
+}
+.is-communist .about h1 {
+  margin-top: 2.0rem;
+  margin-bottom: 0.5rem;
+}
+.is-communist .about h2 {
+  margin-top: 1.0rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .is-communist .about h2 {
+    font-size: 2.0rem;
+  }
+}
+.is-communist .about ul {
+  list-style: none;
+  margin: 3.0rem 0 1.0rem 0;
+  padding: 0;
+}
+.is-communist .about ul li {
+  display: inline;
+  position: relative;
+}
+.is-communist .about ul li a {
+  text-transform: uppercase;
+  margin-left: 1.0rem;
+  margin-right: 1.0rem;
+  font-size: 1.6rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .is-communist .about ul li a {
+    font-size: 1.4rem;
+  }
+}
+.is-communist .error {
+  text-align: center;
+}
+.is-communist .error h1 {
+  margin-top: 2.0rem;
+  margin-bottom: 0.5rem;
+  font-size: 4.6rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .is-communist .error h1 {
+    font-size: 3.2rem;
+  }
+}
+.is-communist .error h2 {
+  margin-top: 2.0rem;
+  margin-bottom: 3.2rem;
+  font-size: 3.2rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .is-communist .error h2 {
     font-size: 2.8rem;
   }
 }
