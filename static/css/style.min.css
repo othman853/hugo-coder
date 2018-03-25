@@ -383,6 +383,10 @@ blockquote {
 .post a {
   text-decoration: underline;
 }
+.post img {
+  max-width: 100%;
+  height: auto;
+}
 .blinking-cursor {
   font-weight: 100;
   color: red;
