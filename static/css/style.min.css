@@ -113,6 +113,7 @@ blockquote {
   border-left: 2px solid #dcdcdc;
   padding-left: 1.6rem;
   font-style: italic;
+  font-size: 2rem;
 }
 .wrapper {
   display: flex;
@@ -378,6 +379,9 @@ blockquote {
 }
 .capitalized {
   text-transform: capitalize;
+}
+.post a {
+  text-decoration: underline;
 }
 .blinking-cursor {
   font-weight: 100;
